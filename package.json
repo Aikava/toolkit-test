@@ -1,0 +1,29 @@
+{
+  "name": "toolkit-test",
+  "version": "1.0.0",
+  "description": "Test assignment for tool-kit.tech",
+  "main": "src/index.tsx",
+  "scripts": {
+    "serve": "vite src",
+    "build": "vite build src --outDir ../public --emptyOutDir",
+    "test": "playwright test"
+  },
+  "repository": "git@github.com:Aikava/toolkit-test.git",
+  "author": "Ry Aikava <aikava.kizuna@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "@testing-library/react": "^16.0.1",
+    "@types/node": "^22.8.4",
+    "@types/react-dom": "^18.3.1",
+    "playwright": "^1.48.2",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.4"
+  },
+  "dependencies": {
+    "effector": "^23.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
