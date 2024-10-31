@@ -16,7 +16,7 @@ Application should utilize:
 The architecture of the application should follow the FSD approach.
 
 ## Functional description
-Application should provide search, paginations, repositories list, and detailed information about selected repository.
+Application should provide search, pagination, repositories list, and detailed information about selected repository.
 Components and APIs should be covered in E2E and unit tests.
 Applications shows by default the current user repo.
 The list of repos should be limited to 10 repos on page.
