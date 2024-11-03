@@ -1,0 +1,25 @@
+.search-bar__wrapper {
+    margin: 1.2em auto;
+    width: 100%;
+    flex-direction: row;
+}
+
+.search-bar__title {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.search-bar__input {
+    border-radius: 56px;
+    width: 100%;
+    font-size: 1.2em;
+    border: none;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.search-bar__button {
+    width: 32px;
+    height: 32px;
+    margin-left: -32px;
+}

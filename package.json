@@ -6,7 +6,8 @@
   "scripts": {
     "serve": "vite src",
     "build": "vite build src --outDir ../public --emptyOutDir",
-    "test": "playwright test"
+    "browser:test": "playwright test",
+    "api:test": "vitest tests/api.spec.ts"
   },
   "repository": "git@github.com:Aikava/toolkit-test.git",
   "author": "Ry Aikava <aikava.kizuna@gmail.com>",
@@ -22,6 +23,7 @@
     "vitest": "^2.1.4"
   },
   "dependencies": {
+    "@octokit/graphql": "^8.1.1",
     "effector": "^23.2.3",
     "effector-react": "^23.2.1",
     "react": "^18.3.1",

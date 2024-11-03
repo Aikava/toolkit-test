@@ -1,0 +1,24 @@
+
+.repository-item {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    height: 64px;
+    flex-direction: row;
+    padding: 0 16px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.repository-item:hover {
+    background: #bbbbbb;
+}
+.repository-item__label {
+    line-height: 64px;
+    font-size: 1.2em;
+}
+.repository-item__stargazer {
+    font-size: 1.2em;
+    line-height: 64px;
+}

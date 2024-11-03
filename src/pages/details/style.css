@@ -1,0 +1,36 @@
+
+.details__container {
+    margin: 8px 24px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+    .details__container {
+        flex-direction: column;
+    }
+}
+
+.owner-section {
+    display: flex;
+    flex-direction: column;
+}
+.owner-section__avatar {
+    width: 216px;
+    height: 216px;
+    margin: 0 24px;
+}
+
+.repository-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.repository-section__title {
+    margin: 0;
+    text-transform: capitalize;
+}
+.repository-section__language {
+    display: inline-block;
+    margin-right: 8px;
+}

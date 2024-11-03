@@ -1,0 +1,38 @@
+.page-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #eeeeee;
+}
+
+.page-footer {
+    background: #1b1f24;
+    display: flex;
+}
+
+.page-footer__content {
+    max-width: 32em;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.page-header {
+    color: white;
+    text-align: center;
+    background: #1b1f24;
+}
+
+.page-content {
+    flex: 1;
+    max-width: 32em;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 16px;
+    margin: 1em auto 0;
+    overflow-y: scroll;
+}
