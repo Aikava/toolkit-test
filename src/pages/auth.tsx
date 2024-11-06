@@ -14,7 +14,6 @@ export const AuthPage = () => {
     const handleUseToken = () => {
         window.localStorage.setItem("github_token", token);
         useToken(token);
-        debugger;
         navigate(searchParams.get("backUrl"));
     };
 
