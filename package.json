@@ -5,7 +5,7 @@
   "main": "src/index.tsx",
   "scripts": {
     "serve": "vite src",
-    "build": "vite build src --outDir ../public --emptyOutDir",
+    "build": "vite build src --outDir ../public --emptyOutDir --base=/toolkit-test",
     "browser:test": "playwright test",
     "api:test": "vitest tests/api.spec.ts"
   },
