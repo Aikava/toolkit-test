@@ -3,6 +3,8 @@
 ## Context and scope
 Using [Github GraphQL API](https://docs.github.com/en/graphql), create a frontend application to preview information about repositories.
 
+Application deployed on github pages: [Github pages](https://aikava.github.io/toolkit-test)
+
 ## Technical description
 Application should utilize:
 - Vite
