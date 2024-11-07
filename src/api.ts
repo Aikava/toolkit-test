@@ -38,7 +38,7 @@ type RepositoryNode = {
     url: string;
     description: string;
     languages: Array<{ name: string; }>;
-    defaultBranchRef: {
+    defaultBranchRef?: {
         target: {
             history: {
                 nodes: Array<{ committedDate: string; }>;

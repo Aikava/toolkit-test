@@ -26,9 +26,9 @@ $queryParams.on(gotoPage, (params, page) => ({
     ...params,
     page
 }));
-$queryParams.on(updateQuery, (params, query) => ({
-    ...params,
-    query
+$queryParams.on(updateQuery, (_, query) => ({
+    query,
+    page: 1
 }));
 
 $queryParams.on(requestNextPage, ({ page, ...store }) => ({

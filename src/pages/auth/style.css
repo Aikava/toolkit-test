@@ -1,0 +1,12 @@
+.auth-page__container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 8px;
+}
+.auth-page__input {
+    font-size: 1.2em;
+}
+.auth-page__button {
+    margin-top: 8px;
+    font-size: 1.2em;
+}

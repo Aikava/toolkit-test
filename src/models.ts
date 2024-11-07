@@ -16,7 +16,7 @@ export const
         repository.name = data.name;
         repository.languages = data.languages.nodes.map(lang => lang.name);
         repository.stargazer = data.stargazerCount;
-        repository.lastCommitDate = data.defaultBranchRef.target.history.nodes[0].committedDate;
+        repository.lastCommitDate = data.defaultBranchRef && data.defaultBranchRef.target.history.nodes[0].committedDate;
         repository.owner = createUserFromApi(data.owner);
 
         return repository;

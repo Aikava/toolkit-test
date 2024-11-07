@@ -16,7 +16,7 @@ import {
     updateQueryParams,
 } from "../../store";
 import {useList, useUnit} from "effector-react";
-import {useSearchParams, createSearchParams} from "react-router-dom";
+import {useSearchParams, createSearchParams, useNavigate, Navigate} from "react-router-dom";
 import {RepositoryItem} from "./repository-item";
 import {Repository} from "../../models";
 
@@ -31,6 +31,8 @@ const renderItem = ({ name, owner, stargazer }: Repository, index: number) => {
 
     return (<RepositoryItem url={url} title={name} stargazer={stargazer} key={index} />);
 }
+
+// Render list of repositories
 export const MainPage = () => {
     const [searchParams, setSearchParams] = useSearchParams();
 
