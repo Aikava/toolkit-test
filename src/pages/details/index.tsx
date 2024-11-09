@@ -13,20 +13,19 @@ export const DetailsPage = () => {
     const details = useUnit($repositoryDetails);
 
     useEffect(() => {
-        if (!details) {
-            void fetchRepositoryDetailsFx({
-                repositoryName: repoId,
-                owner: searchParams.get("owner")
-            });
-        }
-    }, [details]);
+        void fetchRepositoryDetailsFx({
+            repositoryName: repoId,
+            owner: searchParams.get("owner")
+        });
+    }, []);
     const formattedDate = useMemo(() => details &&
         details.lastCommitDate &&
         new Date(details.lastCommitDate).toDateString(), [details]);
+    const isLoading = useUnit(fetchRepositoryDetailsFx.pending);
 
     return (<Page title="Details">
         <div className="details__container">
-            {details ? (
+            {details && !isLoading ? (
                 <>
                 <section className="owner-section">
                     <img className="owner-section__avatar" src={details.owner.avatarUrl}></img>
@@ -52,7 +51,7 @@ export const DetailsPage = () => {
                     </div> }
                 </section>
                 </>
-            ) : /* TODO: Add loader component */ "Loading..."}
+            ) : "Loading..."}
         </div>
     </Page>);
 }
